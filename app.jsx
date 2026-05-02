@@ -65,7 +65,7 @@ function Hero() {
             </h1>
 
             <p className="hero-blurb reveal d2">
-              I'm <strong>Haoran (Holland) Sun</strong> — an AI PM in Singapore. I build small AI products, run a 6,000-follower channel teaching people how to vibe-code with Claude, and personally answer every support message. I'd like to do exactly this, full-time, at Anthropic.
+              I'm <strong>Haoran (Holland) Sun</strong> — an AI PM in Singapore. I build AI products, run a 6,000-follower channel teaching people how to vibe-code with Claude, and personally answer every support message. I'd like to do exactly this, full-time, at Anthropic.
             </p>
 
             <div className="hero-cta reveal d3">
@@ -291,7 +291,7 @@ const VIBE = {
   title: "Holland's Vibe Coding course",
   lead: "A 0→1 course teaching beginners how to ship AI products made by Claude design. Co-built with the community I support — every lesson started as a real question in the group.",
   stats: [
-  { v: "Free", l: "Open course" },
+  { v: "$20", l: "Per learner" },
   { v: "Claude", l: "Design + Code" },
   { v: "0 → 1", l: "Beginner path" }],
 
