@@ -78,7 +78,15 @@ function Hero() {
             </div>
           </div>
 
-          {/* RIGHT — index card */}
+          {/* RIGHT — portrait + index card */}
+          <div className="hero-right">
+          <figure className="hero-portrait reveal d1">
+            <img src="public/holland-portrait.jpg" alt="Holland (Haoran) Sun" />
+            <figcaption>
+              <span className="hero-portrait-loc">Quanzhou · 2025</span>
+              <span className="hero-portrait-name">Haoran "Holland" Sun</span>
+            </figcaption>
+          </figure>
           <aside className="hero-card reveal d2">
             <div className="hero-card-head">
               <span className="hero-card-num">Holland</span>
@@ -111,6 +119,7 @@ function Hero() {
               <span>Currently shipping &amp; supporting</span>
             </div>
           </aside>
+          </div>
         </div>
 
         {/* bottom marquee strip */}
