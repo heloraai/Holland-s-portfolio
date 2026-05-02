@@ -78,12 +78,11 @@ function Hero() {
             </div>
           </div>
 
-          {/* RIGHT — portrait + index card */}
-          <div className="hero-right">
-          <figure className="hero-portrait reveal d1">
-            <img src="public/holland-portrait.jpg" alt="Holland (Haoran) Sun" />
-          </figure>
+          {/* RIGHT — unified profile card (portrait + at-a-glance) */}
           <aside className="hero-card reveal d2">
+            <div className="hero-card-photo">
+              <img src="public/holland-portrait.jpg" alt="Holland (Haoran) Sun" />
+            </div>
             <div className="hero-card-head">
               <span className="hero-card-num">Holland</span>
               <span className="hero-card-label">At a glance</span>
@@ -115,7 +114,6 @@ function Hero() {
               <span>Currently shipping &amp; supporting</span>
             </div>
           </aside>
-          </div>
         </div>
 
         {/* bottom marquee strip */}

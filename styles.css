@@ -82,32 +82,25 @@ img { display: block; max-width: 100%; }
 .btn-ghost { background: transparent; color: var(--ink-2); border-color: var(--line); }
 .btn-ghost:hover { color: var(--ink); border-color: var(--ink-3); background: rgba(255,255,255,0.6); }
 
-/* Right column: portrait + index card stacked, aligned with left column top */
-.hero-right { display: flex; flex-direction: column; gap: 16px; }
+/* Unified profile card on the right (photo banner + at-a-glance + foot) */
+.hero-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0; box-shadow: 0 1px 0 rgba(0,0,0,0.02), 0 12px 32px -16px rgba(0,0,0,0.12); position: relative; overflow: hidden; }
 
-/* Portrait — quiet, editorial, ~4:5 crop, no caption */
-.hero-portrait {
-  margin: 0;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.02), 0 12px 32px -16px rgba(0,0,0,0.12);
+/* Photo banner — square, edge-to-edge inside the card */
+.hero-card-photo { position: relative; }
+.hero-card-photo::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--red);
 }
-.hero-portrait img {
-  width: 100%;
-  height: auto;
+.hero-card-photo img {
+  width: 100%; height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: 65% 25%;
   display: block;
   filter: saturate(0.94) contrast(1.02);
 }
-
-/* Index card on the right */
-.hero-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px 18px; box-shadow: 0 1px 0 rgba(0,0,0,0.02), 0 12px 32px -16px rgba(0,0,0,0.12); position: relative; }
-.hero-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--red); border-radius: 14px 14px 0 0; }
-.hero-card-head { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+.hero-card-head { display: flex; align-items: baseline; justify-content: space-between; padding: 18px 22px 14px; border-bottom: 1px solid var(--line); }
+.hero-card-list { padding: 16px 22px 0; }
+.hero-card-foot { padding: 14px 22px 16px; }
 .hero-card-num { font-family: var(--serif); font-size: 28px; font-style: italic; color: var(--red); letter-spacing: -0.02em; }
 .hero-card-label { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-4); }
 .hero-card-list { display: flex; flex-direction: column; gap: 12px; }
@@ -118,7 +111,7 @@ img { display: block; max-width: 100%; }
 .hero-card-list dd .accent-soft { color: var(--ink); font-weight: 500; }
 .hero-card-list dd .accent { color: var(--red); font-style: italic; font-family: var(--serif); font-size: 17px; }
 .hero-card-avail { font-family: var(--serif); font-size: 17px; letter-spacing: -0.01em; }
-.hero-card-foot { display: flex; align-items: center; gap: 8px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
+.hero-card-foot { display: flex; align-items: center; gap: 8px; margin-top: 16px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
 .dot-pulse { width: 7px; height: 7px; border-radius: 50%; background: #2BA84A; box-shadow: 0 0 0 0 rgba(43, 168, 74, 0.4); animation: pulse 2.4s ease-out infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(43, 168, 74, 0.5); } 70% { box-shadow: 0 0 0 8px rgba(43, 168, 74, 0); } 100% { box-shadow: 0 0 0 0 rgba(43, 168, 74, 0); } }
 
