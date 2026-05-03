@@ -65,7 +65,7 @@ function Hero() {
             </h1>
 
             <p className="hero-blurb reveal d2">
-              I'm <strong>Haoran (Holland) Sun</strong> — an AI PM in Singapore. I build AI products, run a 6,000-follower channel teaching people how to vibe-code with Claude, and personally answer every support message. I'd like to do exactly this, full-time, at Anthropic.
+              I'm <strong>Haoran (Holland) Sun</strong> — an AI PM in Singapore. I build AI products, run a 6,000-follower channel teaching people how to vibe-code with AI Tools, and personally answer every support message. I'd like to do exactly this, full-time, at Anthropic.
             </p>
 
             <div className="hero-cta reveal d3">
